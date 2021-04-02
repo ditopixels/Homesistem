@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeSistem</title>
+  <link  rel="short icon" href="assets/img/logo.png"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+
+  <main class="hero" id="Inicio">
+    <div class="hero-content">
+      <header class="header">
+        <div class="header-wrapper">
+          <div class="header-logo">
+            <img class="logo-img" src="assets/img/logo.png" alt="HomeSistem logotipo">
+            <div class="logo-name">
+              HomeSistem
+            </div>
+          </div>
+          <nav class="menu">
+            <ul>
+              <li class="menu-button"><a href="#Inicio">Inicio</a></li>
+              <li class="menu-button"><a href="#Conocenos">Conócenos</a></li>
+              <li class="menu-button"><a href="#Servicios">Servicios</a></li>
+              <li class="menu-button"><a href="#Contactanos">Contáctanos</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="description wrapper">
+        <div class="dc-content">
+          <h1>Servicio confiable, efectivo y certificado</h1>
+          <p>
+            La sistematización de su negocio es indispensable para aumentar la competitividad, 
+            productividad y crecimiento tecnológico de la misma
+          </p>
+          <div>
+            <a class="button" href="#Servicios">Obtener servicios</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <section id="Conocenos" class="conocenos wrapper">
+    <h2 class="conocenos-title">HomeSistem</h2>
+    <div class="desc">
+      <p>
+        Somos una empresa con 10 años de experiencia. Que ofrece soluciones y  servicios de tecnología e informática, orientada a satisfacer las necesidades  de las  empresas del sector industrial, comercial y de servicio.
+      </p>
+    </div>
+    <!--<img src="assets/img/settings.svg" alt="reparacion de computadores">-->
+    <img class="conocenos-img" src="assets/img/HeroImg.svg" alt="Aumentamos la eficiencia de tu empresa conectandola con nuestros servicios">
+    <div class="desc">
+      <p>
+        Con un personal altamente capacitado y certificado, con garantía de un trabajo responsable y bien hecho. Atendemos clientes  en toda la región de Antioquia.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="Servicios" class="servicios wrapper">
+    <h3>Servicios</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="card-desc">
+          <h4>Hardware partes y repuestos</h4>
+          <p>
+            Contamos con mas de 50 referencias  en productos nuevos y remanufactorados de las mejores marcas.
+          </p>
+        </div>
+        <div>
+          <img class="card-img" src="assets/img/mobile-service.svg" alt="Venta de hardware y repuestos">
+          <a href="" class="button-ghost" id="btn-sellCp">Obtener Servicio</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-desc">
+          <h4>Cableado (REDES)</h4>
+          <p>
+            Suministro e instalación de  cableado estructurado para grupos de trabajo.
+          </p>
+        </div>
+        <div>
+          <img class="card-img" src="assets/img/security-camera.svg" alt="Instalacion de cableado y servicio de camaras de seguridad">
+          <a href="" class="button-ghost" id="btn-cables">Obtener Servicio</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-desc">
+          <h4>Soporte técnico</h4>
+          <p>
+            mantenimiento preventivo, correctivo y reparación de equipos de cómputo. con todo el profesionalismo que usted y su empresa merecen.
+          </p>
+        </div>
+        <div>
+          <img class="card-img" src="assets/img/data.svg" alt="Mantenimiento y reparacion de equipos de computo">
+          <a href="" class="button-ghost" id="sellCp">Obtener Servicio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Contactanos" class="contactanos">
+    <div class="contactanos-content wrapper">
+      <div class="contactanos-img">
+        <img class="form-img" src="assets/img/paper-plane.svg" alt="Contactate con Homesistem">
+      </div>
+      <form class="contactanos-form" action="https://formsubmit.co/c2478e952c20732e1c1d324bc326f527" method="POST">
+        <div>
+          <h5>Contactanos</h5>
+          <input type="text" placeholder="Nombre" required>
+          <label><input type="checkbox">Compra de hardware</label>
+          <label><input type="checkbox">Instalación de cableado</label>
+          <label><input type="checkbox">Reparación o mantenimiento de equipos</label>
+          <label><input type="checkbox">Otro servicio</label>
+          <input type="text" placeholder="Teléfono" required>
+          <input type="email" placeholder="Correo electrónico (opcional)">
+          <textarea name="comment" placeholder="Comentario"></textarea>
+        </div>
+        <input type="submit" value="Adquirir servicio">
+      </form>
+    </div>
+  </section>
+
+
+</body>
+</html>
