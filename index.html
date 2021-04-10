@@ -12,27 +12,27 @@
 </head>
 <body>
 
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-logo">
+        <img class="logo-img" src="assets/img/logo.png" alt="HomeSistem logotipo">
+        <div class="logo-name">
+          HomeSistem
+        </div>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li class="menu-button"><a href="#Inicio">Inicio</a></li>
+          <li class="menu-button"><a href="#Conocenos">Conócenos</a></li>
+          <li class="menu-button"><a href="#Servicios">Servicios</a></li>
+          <li class="menu-button"><a href="#Contactanos">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main class="hero" id="Inicio">
     <div class="hero-content">
-      <header class="header">
-        <div class="header-wrapper">
-          <div class="header-logo">
-            <img class="logo-img" src="assets/img/logo.png" alt="HomeSistem logotipo">
-            <div class="logo-name">
-              HomeSistem
-            </div>
-          </div>
-          <nav class="menu">
-            <ul>
-              <li class="menu-button"><a href="#Inicio">Inicio</a></li>
-              <li class="menu-button"><a href="#Conocenos">Conócenos</a></li>
-              <li class="menu-button"><a href="#Servicios">Servicios</a></li>
-              <li class="menu-button"><a href="#Contactanos">Contáctanos</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
       <section class="description wrapper">
         <div class="dc-content">
           <h1>Servicio confiable, efectivo y certificado</h1>
@@ -128,10 +128,30 @@
           <textarea name="comment" placeholder="Comentario"></textarea>
         </div>
         <input type="submit" value="Adquirir servicio">
+        <a href="mailto:juandiego90123@gmail.com">Enviar correo</a>
       </form>
     </div>
   </section>
-
+<script>
+  
+  (function(d, w, c) {
+      w.ChatraID = 'CycYj6ZJwXj2zdsud';
+      var s = d.createElement('script');
+      w[c] = w[c] || function() {
+          (w[c].q = w[c].q || []).push(arguments);
+      };
+      s.async = true;
+      s.src = 'https://call.chatra.io/chatra.js';
+      if (d.head) d.head.appendChild(s);
+  })(document, window, 'Chatra');
+  window.ChatraSetup = {
+    colors: {
+        buttonText: '#f0f0f0', /* chat button text color */
+        buttonBg: '#19AFFE'    /* chat button background color */
+    }
+  };
+  // 
+</script>
 
 </body>
 </html>
