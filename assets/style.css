@@ -495,6 +495,24 @@ input[type="checkbox"] {
     margin-bottom: 1rem;
 }
 
+#alert {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: #fff;
+    width: calc(100vw - 4rem);
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: rgb(38, 158, 38);
+    transition: transform .25s ease;
+    transform: translateX(-120%);
+    max-width: 465px;
+}
+
+#alert.active {
+    transform: translateX(0);
+}
+
 @media screen and (max-width:768px) {
     .conocenos {
         flex-direction: column;

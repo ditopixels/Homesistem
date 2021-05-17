@@ -32,7 +32,7 @@ d.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    w.ChatraID = 'CycYj6ZJwXj2zdsud';
+    w.ChatraID = 'zvdcDth4d4buz76LZ';
     var s = d.createElement('script');
     w[c] = w[c] || function() {
         (w[c].q = w[c].q || []).push(arguments);
@@ -81,22 +81,21 @@ d.addEventListener('DOMContentLoaded', () => {
         var tempParams = {
             to_name: d.getElementById('name').value,
             reply_to: d.getElementById('email').value,
-            message: `
-            Cliente: ${d.getElementById('name').value}
-            Télefono:${d.getElementById('phone').value}
-            Correo electrónico: ${d.getElementById('email').value}
-            Servicios:
-                Compra de hardware: ${d.getElementById('checkbox-1').checked?'Si':'No'}
-                Instalación de servicios: ${d.getElementById('checkbox-2').checked?'Si':'No'}
-                Reparación o mantenimiento de equipos: ${d.getElementById('checkbox-3').checked?'Si':'No'}
-                Otro servicio: ${d.getElementById('checkbox-4').checked?'Si':'No'}
-            Mensaje: ${d.getElementById('message').value}
-            `,
+            cliente: d.getElementById('name').value,
+            phone: d.getElementById('phone').value,
+            service1: d.getElementById('checkbox-1').checked ? 'x' : '',
+            service2: d.getElementById('checkbox-2').checked ? 'x' : '',
+            service3: d.getElementById('checkbox-3').checked ? 'x' : '',
+            service4: d.getElementById('checkbox-4').checked ? 'x' : '',
+            message: d.getElementById('message').value
         }
-
+        const $alert = d.getElementById('alert')
         emailjs.send('service_nfwp76c', 'template_q8fu5tk', tempParams)
             .then(() => {
-                console.log("Mensaje enviado")
+                $alert.classList.add('active')
+                setTimeout(() => {
+                    $alert.classList.remove('active')
+                }, 2000)
             })
             .catch(e => console.log(e))
     }
