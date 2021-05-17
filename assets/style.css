@@ -33,11 +33,13 @@ p,
 .hero-content {
     width: 100%;
     min-height: 100vh;
+    padding-top: 75px;
     position: absolute;
     background-color: rgba(26, 26, 26, .7);
     color: #EBEBEB;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .header {
