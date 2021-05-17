@@ -1,157 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HomeSistem</title>
-  <link  rel="short icon" href="assets/img/logo.png"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeSistem</title>
+    <link rel="short icon" href="assets/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="main.js"></script>
 </head>
+
 <body>
 
-  <header class="header">
-    <div class="header-wrapper">
-      <div class="header-logo">
-        <img class="logo-img" src="assets/img/logo.png" alt="HomeSistem logotipo">
-        <div class="logo-name">
-          HomeSistem
+    <header class="header">
+        <div class="header-wrapper">
+            <a href="/" class="header-logo">
+                <img class="logo-img" src="assets/img/logo.png" alt="HomeSistem logotipo">
+                <div class="logo-name">
+                    HomeSistem
+                </div>
+            </a>
+
+            <nav class="menu">
+                <div id="menu-button">
+                    <svg height="384pt" viewBox="0 -53 384 384" width="384pt" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+                </div>
+                <ul id="nav-ul">
+                    <li class="menu-button"><a href="#Inicio">Inicio</a></li>
+                    <li class="menu-button"><a href="#Conocenos">Conócenos</a></li>
+                    <li class="menu-button"><a href="#Servicios">Servicios</a></li>
+                    <li class="menu-button"><a href="#Contactanos">Contáctanos</a></li>
+                </ul>
+            </nav>
+
         </div>
-      </div>
-      <nav class="menu">
-        <ul>
-          <li class="menu-button"><a href="#Inicio">Inicio</a></li>
-          <li class="menu-button"><a href="#Conocenos">Conócenos</a></li>
-          <li class="menu-button"><a href="#Servicios">Servicios</a></li>
-          <li class="menu-button"><a href="#Contactanos">Contáctanos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <main class="hero" id="Inicio">
-    <div class="hero-content">
-      <section class="description wrapper">
-        <div class="dc-content">
-          <h1>Servicio confiable, efectivo y certificado</h1>
-          <p>
-            La sistematización de su negocio es indispensable para aumentar la competitividad, 
-            productividad y crecimiento tecnológico de la misma
-          </p>
-          <div>
-            <a class="button" href="#Servicios">Obtener servicios</a>
-          </div>
+    <main class="hero" id="Inicio">
+        <div class="hero-content">
+            <section class="description wrapper">
+                <div class="dc-content">
+                    <h1>Servicio confiable, efectivo y certificado</h1>
+                    <p>
+                        La sistematización de su negocio es indispensable para aumentar la competitividad, productividad y crecimiento tecnológico de la misma
+                    </p>
+
+                    <a class="button widthP" href="#Servicios">Obtener servicios</a>
+
+                </div>
+            </section>
         </div>
-      </section>
-    </div>
-  </main>
+    </main>
 
 
-  <section id="Conocenos" class="conocenos wrapper">
-    <h2 class="conocenos-title">HomeSistem</h2>
-    <div class="desc">
-      <p>
-        Somos una empresa con 10 años de experiencia. Que ofrece soluciones y  servicios de tecnología e informática, orientada a satisfacer las necesidades  de las  empresas del sector industrial, comercial y de servicio.
-      </p>
-    </div>
-    <!--<img src="assets/img/settings.svg" alt="reparacion de computadores">-->
-    <img class="conocenos-img" src="assets/img/HeroImg.svg" alt="Aumentamos la eficiencia de tu empresa conectandola con nuestros servicios">
-    <div class="desc">
-      <p>
-        Con un personal altamente capacitado y certificado, con garantía de un trabajo responsable y bien hecho. Atendemos clientes  en toda la región de Antioquia.
-      </p>
-    </div>
-  </section>
-
-
-  <section id="Servicios" class="servicios wrapper">
-    <h3>Servicios</h3>
-    <div class="cards">
-      <div class="card">
-        <div class="card-desc">
-          <h4>Hardware partes y repuestos</h4>
-          <p>
-            Contamos con mas de 50 referencias  en productos nuevos y remanufactorados de las mejores marcas.
-          </p>
-        </div>
+    <section id="Conocenos" class="conocenos wrapper">
         <div>
-          <img class="card-img" src="assets/img/mobile-service.svg" alt="Venta de hardware y repuestos">
-          <a href="" class="button-ghost" id="btn-sellCp">Obtener Servicio</a>
+            <h2 class="conocenos-title">HomeSistem</h2>
+            <div class="desc">
+                <p>
+                    Somos una empresa con 10 años de experiencia. Que ofrece soluciones y servicios de tecnología e informática, orientada a satisfacer las necesidades de las empresas del sector industrial, comercial y de servicio.
+                </p>
+                <br>
+            </div>
+            <!--<img src="assets/img/settings.svg" alt="reparacion de computadores">-->
+            <div class="desc">
+                <p>
+                    Con un personal altamente capacitado y certificado, con garantía de un trabajo responsable y bien hecho. Atendemos clientes en toda la región de Antioquia.
+                </p>
+            </div>
         </div>
-      </div>
+        <img class="conocenos-img" src="assets/img/HeroImg.svg" alt="Aumentamos la eficiencia de tu empresa conectandola con nuestros servicios">
+    </section>
 
-      <div class="card">
-        <div class="card-desc">
-          <h4>Cableado (REDES)</h4>
-          <p>
-            Suministro e instalación de  cableado estructurado para grupos de trabajo.
-          </p>
-        </div>
-        <div>
-          <img class="card-img" src="assets/img/security-camera.svg" alt="Instalacion de cableado y servicio de camaras de seguridad">
-          <a href="" class="button-ghost" id="btn-cables">Obtener Servicio</a>
-        </div>
-      </div>
 
-      <div class="card">
-        <div class="card-desc">
-          <h4>Soporte técnico</h4>
-          <p>
-            mantenimiento preventivo, correctivo y reparación de equipos de cómputo. con todo el profesionalismo que usted y su empresa merecen.
-          </p>
-        </div>
-        <div>
-          <img class="card-img" src="assets/img/data.svg" alt="Mantenimiento y reparacion de equipos de computo">
-          <a href="" class="button-ghost" id="sellCp">Obtener Servicio</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <section id="Servicios" class="servicios wrapper">
+        <h3>Servicios</h3>
+        <div class="cards">
+            <div class="card">
+                <div class="card-desc">
+                    <h4>Hardware partes y repuestos</h4>
+                    <p>
+                        Contamos con mas de 50 referencias en productos nuevos y remanufactorados de las mejores marcas.
+                    </p>
+                </div>
+                <div>
+                    <img class="card-img" src="assets/img/mobile-service.svg" alt="Venta de hardware y repuestos">
+                    <a href="" class="button-ghost" id="btn-sellCp">Obtener Servicio</a>
+                </div>
+            </div>
 
-  <section id="Contactanos" class="contactanos">
-    <div class="contactanos-content wrapper">
-      <div class="contactanos-img">
-        <img class="form-img" src="assets/img/paper-plane.svg" alt="Contactate con Homesistem">
-      </div>
-      <form class="contactanos-form" netlify>
-        <div>
-          <h5>Contactanos</h5>
-          <input type="text" placeholder="Nombre" required>
-          <label><input type="checkbox">Compra de hardware</label>
-          <label><input type="checkbox">Instalación de cableado</label>
-          <label><input type="checkbox">Reparación o mantenimiento de equipos</label>
-          <label><input type="checkbox">Otro servicio</label>
-          <input type="text" placeholder="Teléfono" required>
-          <input type="email" placeholder="Correo electrónico (opcional)">
-          <textarea name="comment" placeholder="Comentario"></textarea>
-        </div>
-        <input type="submit" value="Adquirir servicio">
-        <a href="mailto:juandiego90123@gmail.com">Enviar correo</a>
-      </form>
-    </div>
-  </section>
-<script>
-  
-  (function(d, w, c) {
-      w.ChatraID = 'CycYj6ZJwXj2zdsud';
-      var s = d.createElement('script');
-      w[c] = w[c] || function() {
-          (w[c].q = w[c].q || []).push(arguments);
-      };
-      s.async = true;
-      s.src = 'https://call.chatra.io/chatra.js';
-      if (d.head) d.head.appendChild(s);
-  })(document, window, 'Chatra');
-  window.ChatraSetup = {
-    colors: {
-        buttonText: '#f0f0f0', /* chat button text color */
-        buttonBg: '#19AFFE'    /* chat button background color */
-    }
-  };
-  // 
-</script>
+            <div class="card">
+                <div class="card-desc">
+                    <h4>Cableado (REDES)</h4>
+                    <p>
+                        Suministro e instalación de cableado estructurado para grupos de trabajo.
+                    </p>
+                </div>
+                <div>
+                    <img class="card-img" src="assets/img/security-camera.svg" alt="Instalacion de cableado y servicio de camaras de seguridad">
+                    <a href="" class="button-ghost" id="btn-cables">Obtener Servicio</a>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="card-desc">
+                    <h4>Soporte técnico</h4>
+                    <p>
+                        mantenimiento preventivo, correctivo y reparación de equipos de cómputo. con todo el profesionalismo que usted y su empresa merecen.
+                    </p>
+                </div>
+                <div>
+                    <img class="card-img" src="assets/img/data.svg" alt="Mantenimiento y reparacion de equipos de computo">
+                    <a href="" class="button-ghost" id="sellCp">Obtener Servicio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contactanos" class="contactanos">
+        <div class="contactanos-content wrapper">
+            <div class="contactanos-img">
+                <img class="form-img" src="assets/img/paper-plane.svg" alt="Contactate con Homesistem">
+            </div>
+            <form class="contactanos-form" id="contactForm">
+
+                <h5>Contactate con nosotros</h5>
+
+
+                <label inputAnimated>
+                  <input type="text" id="name" autocomplete="off"> 
+                  <span class="placeholder">Nombre*</span>
+                </label>
+
+                <label class="check"><input type="checkbox" id="checkbox-1">Compra de hardware</label>
+                <label class="check"><input type="checkbox" id="checkbox-2">Instalación de cableado</label>
+                <label class="check"><input type="checkbox" id="checkbox-3">Reparación o mantenimiento de equipos</label>
+                <label class="check"><input type="checkbox" id="checkbox-4">Otro servicio</label>
+
+                <label inputAnimated>
+                      <input type="text" id="phone" autocomplete="off"> 
+                      <span class="placeholder">Teléfono*</span>
+                    </label>
+
+                <label inputAnimated>
+                      <input type="email" id="email" autocomplete="off"> 
+                      <span class="placeholder">Correo electrónico</span>
+                    </label>
+
+                <label inputAnimated>
+                      <textarea id="message" autocomplete="off"></textarea>
+                      <span class="placeholder">Comentario</span>
+                    </label>
+
+                <button class="button" id="send">Adquirir servicios</button>
+
+
+
+            </form>
+        </div>
+    </section>
 </body>
+
 </html>
